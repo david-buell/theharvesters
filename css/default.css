@@ -1,23 +1,8 @@
 
-.logo-shield {
-	vertical-align: bottom;
-}
-
-.clan-title {
-	border: 0;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: 'Cinzel', sans-serif;
-	color: #fff;
-	display: inline; 
-	margin-left: 5px; 
-	line-height: 1px;
-}
 
 /* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
-ol,ul{list-style:none;margin:0;padding:0;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
@@ -38,17 +23,18 @@ nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
-@font-face {
-    font-family: 'nexa_boldregular';
-    src: url('../fonts/Nexa_Free_Bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 body {
-	font-family:trebuchet ms, arial, sans-serif;
-	font-size: 100%;
+	font-family: helvetica, arial, sans-serif;
 	background: #ffffff;
+	font-size: 0.8925em;
+	line-height:1.5em;
+	color: #111111;
 }
+strong {
+	font-weight: bold;
+}
+
 .wrap{
 	margin:0 auto;
 	width:80%;
@@ -57,7 +43,7 @@ body {
 	padding:4px 4%;
 }
 /* start header */
-.header_bg{
+header{
 	background: #314D68;
 }
 .logo{
@@ -67,6 +53,13 @@ body {
 .cssmenu {
 	float: right;
 }
+
+.cssmenu > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .cssmenu > ul > li {
 	display:inline-block;
 	position: relative;
@@ -84,7 +77,6 @@ body {
 	vertical-align: middle;
 }
 .cssmenu > ul > li > a {
-	font-family: 'Merriweather Sans', sans-serif;
 	color: #9FB4CC;
 	display: block;
 	font-size: 16px;
@@ -100,6 +92,22 @@ body {
 .cssmenu > ul > li > a:hover {
 	color: #ffffff;
 }
+
+.logo-shield {
+	vertical-align: bottom;
+}
+
+.clan-title {
+	border: 0;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Cinzel', sans-serif;
+	color: #fff;
+	display: inline; 
+	margin-left: 5px; 
+	line-height: 1px;
+}
+
 /* start sub_header */
 .header_sub_bg{
 	background: #f8f8f8;
@@ -130,50 +138,40 @@ body {
 .sub_nav li:hover > a {
    	border-bottom:1px solid #161616;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+p{
+	text-align:left;
+	margin: 0 0 10px;
+}
+
+
 /* start main */
 .content{
 	padding: 4% 0;
 	border-bottom: 1px solid rgb(226, 226, 226);
 }
-.content h2.list{
-	width: 75%;
-	margin: 0 auto;
+.content h1 {
+	font-size: 24pt;
+	margin: 0 0 15px;
+}
+.content h2 {
+	font-size: 16pt;
+	margin: 0 0 10px;
 }
 .content h3{
-	margin-top: 1%;
+	font-size: 14pt;
+	margin: 0 0 10px;
 }
-h2.style a{
-	font-family: 'nexa_boldregular';
-	display:block;
-	text-align: center;
-	font-size: 3.2em;
-	color: #111111;
-	text-transform: capitalize;
-	letter-spacing: -1px;
-	word-spacing: -2px;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+
+.content ul {
+	margin: 5px 0 5px;
 }
-h2.style a:hover{
-	color:#333333;
-}
-h3.style{
-	text-align: center;
-	font-size: 0.8125em;
-	color: #777777;
-	text-transform: capitalize;
-	font-family: 'Merriweather Sans', sans-serif;
-}
-p.para{
-	text-align:left;
-	font-size: 0.8925em;
-	line-height:1.8em;
-	color: #111111;
-	font-family: 'Merriweather Sans', sans-serif;	
-}
+
+
 .list_img{
 	margin: 2% 0;
 	text-align: center;
@@ -181,7 +179,6 @@ p.para{
 .btn{
 	margin-top: 1.5%;
 	display: inline-block;
-	font-family: 'Merriweather Sans', sans-serif;
 	text-align: left;
 	font-size: 1em;
 	color: #000000;
@@ -214,7 +211,6 @@ p.para{
 	color: #111111;
 	font-size: 1em;
 	display: block;
-	font-family: 'Merriweather Sans', sans-serif;
 	padding: 4px 16px;
 }
 .left_arrow{
@@ -273,7 +269,6 @@ p.para{
 	margin-right: 8%;
 }
 .foot_nav li a{
-	font-family: 'Merriweather Sans', sans-serif;
 	color: #555555;
 	display: block;
 	font-size: 15px;
@@ -323,9 +318,6 @@ p.para{
 	transition: opacity .15s ease-in-out;
 }
 /* start footer copy */
-.copy{
-	font-family: 'Merriweather Sans', sans-serif;
-}
 .copy p{
 	text-transform: capitalize;
 	font-size: 0.8725em;
@@ -353,71 +345,27 @@ p.para{
 .top1{
 	margin-top: 4%;
 }
-h4.style a{
-	font-size: 16px;
-	font-family: 'nexa_boldregular';
-	color: #111111;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+
+@media (min-width: 500px) {
+	.row {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		text-align: center;
+		margin: 30px 0 0;
+	}
+	.column-half {
+		display: table-cell;
+		width: 50%;
+		padding: 0 20px;
+	}
 }
-h4.style a:hover{
-	color: #333333;
-}
-h5.style{
-	font-size:16px;
-	font-family: 'nexa_boldregular';
-	color: #555555;
-	line-height: 1.8em;
-}
-.span3{
-	text-align:center;
-}
-.span1_of_3{
-	margin-top:4%;
-	float: left;
-	margin-left: 6.333%;
-	width:26.3333%;
-}
-.span1_of_3 p{
-	text-align: center;
-}
-.span2{
-	text-align:center;
-	width: 60%;
-	margin: 40px auto;
-}
-.span1_of_2{
-	margin-top: 4%;
-	float: left;
-	margin-left: 6.333%;
-	width: 43.3333%;
-}
-.span1_of_2 p{
-	text-align: center;
-}
-/* start blog*/
-h4.style1 a{
-	font-size: 1.5em;
-	font-family: 'nexa_boldregular';
-	color: #111111;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-}
-h4.style1 a:hover{
-	color: #333333;
-}
+
 .article{
 	text-align:center;
 }
 .article h5{
 	font-size: 16px;
-	font-family: 'nexa_boldregular';
 	color: #111111;
 }
 .article ul {
@@ -429,7 +377,6 @@ h4.style1 a:hover{
 	cursor: pointer;
 }
 .article ul li a{
-	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 0.8725em;
 	color: #ffffff;
 	background: #111111;
@@ -477,7 +424,6 @@ h4.style1 a:hover{
 }
 .grids_of_2 h2{
 	display: block;
-	font-family: 'nexa_boldregular';
 	font-size: 2.5em;
 	color: #111111;
 	letter-spacing: -2px;
@@ -500,7 +446,6 @@ h4.style1 a:hover{
 .btn1{
 	margin-top: 1%;
 	display: inline-block;
-	font-family: 'Merriweather Sans', sans-serif;
 	text-align: left;
 	font-size: 1em;
 	color: #555;
@@ -521,6 +466,7 @@ h4.style1 a:hover{
 	-o-transition: opacity .15s ease-in-out;
 	transition: opacity .15s ease-in-out;
 }
+
 .grid1_of_2.left{
 	margin-left: 14%;
 }
@@ -528,11 +474,10 @@ h4.style1 a:hover{
 .artical-commentbox {
 	margin: 2% 0;
 }
-.table-form{
+.table-form {
 	width:100%;
 }
 .table-form form input[type="text"]{
-	font-family: 'Merriweather Sans', sans-serif;
 	border: 1px solid rgba(192, 192, 192, 0.61);
 	outline: none;
 	padding: 10px;
@@ -547,7 +492,6 @@ h4.style1 a:hover{
 	-o-border-radius: 4px;
 }
 .table-form textarea{
-	font-family: 'Merriweather Sans', sans-serif;
 	padding: 8px;
 	margin-top: 25px;
 	outline:none;
@@ -558,7 +502,6 @@ h4.style1 a:hover{
 	resize: none;
 }
 .table-form a{
-	font-family: 'Merriweather Sans', sans-serif;
 	color: #5a5a5a;
 	padding:8px 20px;
 	background: #fff;
@@ -603,14 +546,12 @@ form{
 	padding:5px 0;
 }
 .contact-form span label{
-	font-family: 'Merriweather Sans', sans-serif;
 	color: #666666;
 	display: block;
 	font-size: 0.8725em;
 	padding-bottom: 5px;
 }
 .contact-form input[type="text"], .contact-form textarea {
-	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 0.8725em;
 	background: #FFFFFF;
 	border: 1px solid #E7E7E7;
@@ -631,7 +572,6 @@ form{
 	outline:none;
 	font-size: 0.8725em;
 	text-transform:uppercase;
-	font-family: 'Merriweather Sans', sans-serif;
 	color: #5a5a5a;
 	padding: 8px 20px;
 	background: #fff;
