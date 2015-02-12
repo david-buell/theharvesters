@@ -35,12 +35,42 @@ strong {
 	font-weight: bold;
 }
 
+.content .claninfo {
+	width: 320px;
+}
+
+.content .claninfo img {
+	float: left; 
+	width: 30px; 
+	height: 30px;
+}
+
+.content .claninfo h2 {
+	padding: 4px 0 0 48px;
+}
+
+.content .claninfo ul {
+	list-style-type: none;
+	margin: 0 0 5px 50px;
+	padding: 0;
+	border-bottom: 1px solid #BBB;
+}
+.content .claninfo ul li {
+	display: inline;
+}
+.content .claninfo ul li:nth-child(1) {
+	font-weight: bold;
+}
+.content .claninfo ul li:nth-child(2) {
+	float: right;
+}
+
 .wrap{
 	margin:0 auto;
 	width:80%;
 }
 .wrapper{
-	padding:4px 4%;
+	padding:0px 4%;
 }
 /* start header */
 header{
@@ -154,15 +184,15 @@ p{
 	padding: 4% 0;
 	border-bottom: 1px solid rgb(226, 226, 226);
 }
-.content h1 {
+h1 {
 	font-size: 24pt;
 	margin: 0 0 15px;
 }
-.content h2 {
+h2 {
 	font-size: 16pt;
 	margin: 0 0 10px;
 }
-.content h3{
+h3{
 	font-size: 14pt;
 	margin: 0 0 10px;
 }
