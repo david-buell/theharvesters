@@ -45,6 +45,7 @@ strong {
 /* start header */
 header{
 	background: #314D68;
+	width: 100%;
 }
 .logo{
 	float:left;
