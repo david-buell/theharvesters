@@ -215,8 +215,39 @@ img.valkyrie {
 	margin: 5px 0 5px;
 }
 
+/* Tables */
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+th {
+	font-weight: bold;
+}
+td, th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+.article-table {
+	background: #fafafa;
+	border-collapse: collapse;
+	border: 0px none #cccccc;
+	margin: 1em 1em 1em 0;
+}
+.article-table th {
+	background: #f2f2f2;
+}
+
+
+.article-table th, .article-table td {
+	border-bottom: 1px #cccccc solid;
+	padding: 6px 12px;
+	text-align: center;
+}
+
 
 /* start about */
+
 .top{
 	margin-top: 2%;
 }
