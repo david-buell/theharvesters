@@ -146,14 +146,13 @@ p{
 
 
 /* start main */
+.coc-logo {
+	float:right;
+	max-width:250px;
+}
 .content{
 	padding: 4% 0;
 	border-bottom: 1px solid rgb(226, 226, 226);
-}
-
-
-.content .claninfo {
-	width: 320px;
 }
 
 .content .claninfo img {
@@ -195,6 +194,23 @@ h3{
 	margin: 0 0 10px;
 }
 
+.troop {
+	float: left;
+	margin: 0px 10px 10px 0;
+}
+
+img.valkyrie {
+	margin: 0px 65px 10px 65px;
+}
+
+.troop-desc {
+	margin: 0 0 25px 0;
+}
+
+.troop-desc h4 {
+	margin: 0 0 15px 0;
+}
+
 .content ul {
 	margin: 5px 0 5px;
 }
@@ -206,21 +222,6 @@ h3{
 }
 .top1{
 	margin-top: 4%;
-}
-
-@media (min-width: 500px) {
-	.row {
-		display: table;
-		table-layout: fixed;
-		width: 100%;
-		text-align: center;
-		margin: 30px 0 0;
-	}
-	.column-half {
-		display: table-cell;
-		width: 50%;
-		padding: 0 20px;
-	}
 }
 
 .grids_of_2 h2{
@@ -238,6 +239,49 @@ h3{
 }
 
 /***** Media Quries *****/
+@media (min-width: 650px) {
+	.row {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		text-align: center;
+		margin: 30px 0 0;
+	}
+	.column-half {
+		display: table-cell;
+		width: 50%;
+		padding: 0 20px;
+	}
+}
+@media (min-width: 1131px) {
+	.content .claninfo {
+		width: 320px;
+		float: left;
+	}
+	.coc-characters {
+		float:right;
+		width: 650px;
+	}
+}
+@media (max-width: 700px) {
+	.troop {
+		display: none;
+	}
+	.coc-logo {
+		display: none;
+	}
+}
+@media (max-width: 1130px) {
+	.content .claninfo {
+		width: 320px;
+		margin: 0 auto;
+	}
+	.coc-characters {
+		display: block;
+		width: 650px;
+		margin: 0 auto;
+	}
+}
 @media only screen and (max-width: 1366px) {
 	.wrap{
 		width:95%;
