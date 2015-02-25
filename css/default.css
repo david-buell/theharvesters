@@ -194,13 +194,23 @@ h3{
 	margin: 0 0 10px;
 }
 
+
+
 .troop {
 	float: left;
 	margin: 0px 10px 10px 0;
 }
 
+img.minion {
+	margin: 0px 35px 10px 48px;
+}
+
 img.valkyrie {
 	margin: 0px 65px 10px 65px;
+}
+
+img.balloon {
+	margin: 0px 35px 10px 45px;
 }
 
 .troop-desc {
@@ -208,7 +218,14 @@ img.valkyrie {
 }
 
 .troop-desc h4 {
-	margin: 0 0 15px 0;
+	font-size: 16px;
+	margin: 0 0 0px 0;
+}
+
+.rating {
+    font-weight: bold;
+    color: #FF4040;
+    margin: 0 0 4px 0;
 }
 
 .content ul {
