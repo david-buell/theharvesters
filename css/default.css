@@ -196,8 +196,6 @@ h3{
 	margin: 0 0 10px;
 }
 
-
-
 .troop {
 	float: left;
 	margin: 0px 10px 10px 0;
@@ -247,21 +245,60 @@ td, th {
 	display: table-cell;
 	vertical-align: inherit;
 }
-.article-table {
+.leaderboard {
 	background: #fafafa;
 	border-collapse: collapse;
 	border: 0px none #cccccc;
 	margin: 1em 1em 1em 0;
 }
-.article-table th {
+.leaderboard th {
 	background: #f2f2f2;
 }
 
-
-.article-table th, .article-table td {
+.leaderboard th, .leaderboard td {
 	border-bottom: 1px #cccccc solid;
 	padding: 6px 12px;
+}
+
+.leaderboard tr.header th, .leaderboard td {
 	text-align: center;
+}
+
+.leaderboard th {
+	text-align: left;
+}
+
+
+.leaderboard tr:nth-child(2) th::before {
+	content: '1. ';
+}
+
+.leaderboard tr:nth-child(3) th::before {
+	content: '2. ';
+}
+.leaderboard tr:nth-child(4) th::before {
+	content: '3. ';
+}
+.leaderboard tr:nth-child(5) th::before {
+	content: '4. ';
+}
+.leaderboard tr:nth-child(6) th::before {
+	content: '5. ';
+}
+.leaderboard tr:nth-child(7) th::before {
+	content: '6. ';
+}
+.leaderboard tr:nth-child(8) th::before {
+	content: '7. ';
+}
+.leaderboard tr:nth-child(9) th::before {
+	content: '8. ';
+}
+.leaderboard tr:nth-child(10) th::before {
+	content: '9. ';
+}
+.leaderboard tr:nth-child(11) th::before {
+	content: '10. ';
 }
 
 /* Forms */
