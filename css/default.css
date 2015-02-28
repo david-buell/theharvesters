@@ -242,67 +242,91 @@ tr {
 	vertical-align: inherit;
 	border-color: inherit;
 }
-th {
+table.leaderboard tr.header th {
 	font-weight: bold;
+	background: #EAEAEA;
 }
-td, th {
+table.leaderboard td, table.leaderboard th {
 	display: table-cell;
 	vertical-align: inherit;
 }
-.leaderboard {
-	background: #fafafa;
+
+table.leaderboard {
+	background: #E6F0FF;
 	border-collapse: collapse;
 	border: 0px none #cccccc;
 	margin: 1em 1em 1em 0;
 }
-.leaderboard th {
-	background: #f2f2f2;
-}
 
-.leaderboard th, .leaderboard td {
+table.leaderboard th, table.leaderboard td {
 	border-bottom: 1px #cccccc solid;
 	padding: 6px 12px;
 }
 
-.leaderboard tr.header th, .leaderboard td {
-	text-align: center;
+table.leaderboard tr:nth-of-type(odd) {
+	background: #D6E3F1;
 }
 
-.leaderboard th {
+table.leaderboard tr.header th, table.leaderboard td {
+	text-align: left;
+}
+
+table.leaderboard td:nth-child(1) {
 	text-align: left;
 }
 
 
-.leaderboard tr:nth-child(2) th::before {
-	content: '1. ';
+@media only screen and (min-width: 701px) {
+	table.leaderboard tr:nth-child(2) td:nth-child(1)::before { content: '1. '; }
+	table.leaderboard tr:nth-child(3) td:nth-child(1)::before { content: '2. '; }
+	table.leaderboard tr:nth-child(4) td:nth-child(1)::before { content: '3. '; }
+	table.leaderboard tr:nth-child(5) td:nth-child(1)::before { content: '4. '; }
+	table.leaderboard tr:nth-child(6) td:nth-child(1)::before { content: '5. '; }
+	table.leaderboard tr:nth-child(7) td:nth-child(1)::before { content: '6. '; }
+	table.leaderboard tr:nth-child(8) td:nth-child(1)::before { content: '7. '; }
+	table.leaderboard tr:nth-child(9) td:nth-child(1)::before { content: '8. '; }
+	table.leaderboard tr:nth-child(10) td:nth-child(1)::before { content: '9. '; }
+	table.leaderboard tr:nth-child(11) td:nth-child(1)::before { content: '10. '; }
 }
 
-.leaderboard tr:nth-child(3) th::before {
-	content: '2. ';
-}
-.leaderboard tr:nth-child(4) th::before {
-	content: '3. ';
-}
-.leaderboard tr:nth-child(5) th::before {
-	content: '4. ';
-}
-.leaderboard tr:nth-child(6) th::before {
-	content: '5. ';
-}
-.leaderboard tr:nth-child(7) th::before {
-	content: '6. ';
-}
-.leaderboard tr:nth-child(8) th::before {
-	content: '7. ';
-}
-.leaderboard tr:nth-child(9) th::before {
-	content: '8. ';
-}
-.leaderboard tr:nth-child(10) th::before {
-	content: '9. ';
-}
-.leaderboard tr:nth-child(11) th::before {
-	content: '10. ';
+@media only screen and (max-width: 700px) {
+
+	table.leaderboard, table.leaderboard thead, table.leaderboard tbody, 
+	table.leaderboard th, table.leaderboard td, table.leaderboard tr {
+		display: block;
+	}
+
+	table.leaderboard tr.header {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	table.leaderboard tr {
+		border: 1px solid #ccc;
+	}
+
+	table.leaderboard td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	table.leaderboard td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		font-weight: bold;
+	}
+
+	td:nth-of-type(1):before { content: "Name"; }
+	td:nth-of-type(2):before { content: "Last War Star Count"; }
+	td:nth-of-type(3):before { content: "Total Star Count"; }
+	td:nth-of-type(4):before { content: "Average Stars Per Attack"; }
 }
 
 /* Forms */
