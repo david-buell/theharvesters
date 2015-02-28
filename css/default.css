@@ -310,7 +310,7 @@ table.leaderboard td:nth-child(1) {
 		border: none;
 		border-bottom: 1px solid #eee;
 		position: relative;
-		padding-left: 50%;
+		padding-left: 60%;
 	}
 
 	table.leaderboard td:before {
