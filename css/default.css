@@ -25,7 +25,8 @@ img{max-width:100%;}
 /*end reset*/
 
 body {
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Open Sans', sans-serif, arial;
+	font-weight: 400;
 	background: #ffffff;
 	font-size: 0.8925em;
 	line-height:1.5em;
