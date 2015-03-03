@@ -7,7 +7,7 @@ blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
 /* start editing from here */
-a{text-decoration:none;}
+a{text-decoration:underline;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
 .txt-center{text-align:center;}/* text align center */
@@ -52,6 +52,11 @@ header{
 	float:left;
 	padding: 9px 0 9px 0;
 }
+
+.logo a {
+	text-decoration: none;
+}
+
 /*menu*/
 .cssmenu {
 	float: right;
@@ -90,7 +95,7 @@ header{
 	font-weight: 600;
 	line-height: 1.5em;
 	padding: 14px 18px;
-	
+	text-decoration: none;
 }
 .cssmenu > ul > li > a:hover {
 	color: #C0D2E2;
@@ -112,35 +117,6 @@ header{
 }
 
 /* start sub_header */
-.header_sub_bg{
-	background: #f8f8f8;
-	border-bottom:1px solid #dddddd;
-	height: 80px;
-}
-.hdr-nav{
-	float:right;
-	width: 47%;
-}
-.sub_nav li {
-    float: left;
-    position: relative;
-}
-.sub_nav li.active a{
-	border-bottom:1px solid #161616;
-}
-.sub_nav li a {
-	height: 38px;
-	color: #555555;
-	display: block;
-	float: left;
-	font-size: 1.1em;
-	padding:8px 16px;
-	position: relative;
-	text-decoration: none;
-}
-.sub_nav li:hover > a {
-   	border-bottom:1px solid #161616;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
