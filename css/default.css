@@ -179,20 +179,38 @@ h3{
 
 .troop {
 	float: left;
-	margin: 0px 10px 10px 0;
+	padding: 0px 10px 10px 0;
+	/*width: 50%;*/
+	max-width: 250px;
 }
 
 img.minion {
-	margin: 0px 35px 10px 48px;
+	padding: 0px 35px 10px 48px;
+	max-width: 177px;
 }
 
 img.valkyrie {
-	margin: 0px 65px 10px 65px;
+	padding: 0px 65px 10px 65px;
+	max-width: 130px;
 }
 
 img.balloon {
-	margin: 0px 35px 10px 45px;
+	padding: 0px 35px 10px 45px;
+	max-width: 180px;
 }
+
+@media (max-width: 600px) {
+	.troop {
+		float: none;
+		display: block;
+	}
+}
+@media (max-width: 200px) {
+	.troop {
+		display: none;
+	}
+}
+
 
 .troop-desc {
 	margin: 0 0 25px 0;
@@ -466,10 +484,8 @@ table.leaderboard td:nth-child(1) {
 		width: 650px;
 	}
 }
+
 @media (max-width: 700px) {
-	.troop {
-		display: none;
-	}
 	.coc-logo {
 		display: none;
 	}
