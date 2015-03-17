@@ -57,6 +57,43 @@ header{
 	text-decoration: none;
 }
 
+/* banner */
+
+
+.tooltip {
+	border-radius: 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	margin: 0 0 30px 0;
+}
+.tooltip img {
+	border: 0; 
+	margin: -2px 0 0 -22px;
+	position: relative;
+	float: left;
+}
+.tooltip em {
+	font-size: 1.4em; 
+	font-weight: bold;
+	display: block;
+	padding: 10px 0 15px 30px;
+}
+.tooltip p {
+	padding: 0 8px 5px 30px;
+}
+
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+.help { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
 /*menu*/
 .cssmenu {
 	float: right;
