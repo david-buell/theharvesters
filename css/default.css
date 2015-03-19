@@ -278,13 +278,13 @@ img.balloon {
 .tabs-style-bar nav {
 	font-weight: 300;
 	font-size: 1.25em;
-	background: #DDE2E0;
+	border-bottom: 1px solid #A6A8AA;
 	text-align: center;
 }
 
 .tabs nav ul {
 	position: relative;
-	top: 10px;
+	top: 11px;
 	padding: 0px 0 0 0;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -310,13 +310,14 @@ img.balloon {
 	border: 1px solid #A6A8AA;
 	color: #74777b;
 	text-decoration: none;
-	transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 	position: relative;
 	display: block;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	line-height: 2.5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .tabs-style-bar nav ul li a:hover {
@@ -336,11 +337,12 @@ img.balloon {
 	border-right: 12px solid transparent;
 	border-top: 10px solid #fff;
 	margin: 0 auto;
+	display: none;
 }
 
 .tabs-style-bar nav ul li.tab-current .arrow-down {
 	border-top: 10px solid #F17E21;
-	transition: border-color 0.2s;
+	display: block;
 }
 
 .tabs nav ul li {
