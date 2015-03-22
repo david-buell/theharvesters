@@ -57,7 +57,7 @@
 		var tab_top = $('.tabs').position().top + 13;
 		
 		if ($(window).scrollTop() >= tab_top) {
-			$(window).scrollTo(tab_top, 500);
+			$(window).scrollTo(tab_top + 1, 500);
 		}
 	};
 
