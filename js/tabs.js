@@ -53,6 +53,12 @@
 		this.current = idx != undefined ? idx : this.options.start >= 0 && this.options.start < this.items.length ? this.options.start : 0;
 		this.tabs[ this.current ].className = 'tab-current';
 		this.items[ this.current ].className = 'content-current';
+		
+		var tab_top = $('.tabs').position().top + 13;
+		
+		if ($(window).scrollTop() >= tab_top) {
+			$(window).scrollTo(tab_top, 500);
+		}
 	};
 
 	// add to global namespace
