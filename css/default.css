@@ -267,6 +267,14 @@ img.balloon {
 	margin: 5px 0 5px;
 }
 
+
+.base {
+	float: left;
+	padding: 0px 10px 10px 0;
+	max-width: 600px;
+}
+
+
 /* Tabs */
 .tabs {
 	position: relative;
