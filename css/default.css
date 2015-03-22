@@ -272,6 +272,7 @@ img.balloon {
 	float: left;
 	padding: 0px 10px 10px 0;
 	max-width: 600px;
+	width: 100%;
 }
 
 
