@@ -45,7 +45,8 @@ strong {
 }
 /* start header */
 header{
-	background: #314D68;
+	/*background: #314D68;*/
+	background-image: url(../img/blue-tile.png);
 	width: 100%;
 }
 .logo{
